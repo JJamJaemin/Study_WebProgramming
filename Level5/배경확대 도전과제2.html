@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>배경 확대 효과 활용</title>
+        <style>
+        
+            div {
+                transition: background-size 5s;
+                
+                display: inline-block;
+                width: 150px; height: 150px;
+                background-image: url("koala.jpg");
+                background-size: 150px 150px;
+                background-position: center center;
+            }
+            div:hover{
+                background-size : 170px 170px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>배경 확대하기(트랜지션)</h3>
+        <hr>
+        <div style="border: 1px solid black;">
+        </div>
+        
+    </body>
+</html>

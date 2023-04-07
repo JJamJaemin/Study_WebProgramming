@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>배경 확대 효과 활용</title>
+        <style>
+            @keyframes bomb{
+                from {background-size: 150px 150px;}
+                to {background-size: 170px 170px;}
+            }
+            div{
+                
+                display: inline-block;
+                width: 150px; height: 150px;
+                background-image: url("koala.jpg");
+                background-size: 150px 150px;
+                background-position: center center;
+            }
+            div:hover{
+                animation-name : bomb;
+                animation-duration: 1s;
+                animation-iteration-count: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>배경 확대하기(에니메이션)</h3>
+        <hr>
+        <div style="border: 1px solid black;">
+        </div>
+        
+    </body>
+</html>
