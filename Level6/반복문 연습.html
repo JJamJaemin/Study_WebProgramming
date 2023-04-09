@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>반복문 연습하기</title>
+        
+    </head>
+    <body>
+        <h3>숫자를 입력 받아 1부터 입력받은 숫자까지 3의 배수 숫자들만 평균구하기</h3>
+        <script>
+            var i = 0, n = 0 , sum = 0 , m = 0, a = 0, avg=0;     
+            var n = prompt("몇까지 평균을 구할까요?", "");
+            
+            m = parseFloat(n);
+            i = parseFloat(i);
+            sum = parseFloat(sum);
+            a = parseFloat(a);
+            avg = parseFloat(avg);
+            
+            for(i= 1 ; i <= m ; i++)
+                {
+                    
+                    if((i%3) == 0)    
+                        {
+                            sum += i;  
+                            a++;
+                                                       
+                        }
+                    
+                    
+                }
+            avg = sum/a;
+            document.write("3의 배수 숫자들의 평균은 "+avg+"입니다. ");
+            
+        </script>
+    </body>
+</html>

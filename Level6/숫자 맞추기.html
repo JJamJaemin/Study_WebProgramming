@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>숫자맞추기</title>
+        
+    </head>
+    <script>
+        var answer = 74;
+        answer = parseInt(answer);
+        var user_answer = prompt("숫자를 맞춰보세요", "");
+        user_answer = parseInt(user_answer);
+        var a =0;
+        a = parseInt(a);
+        var count = 0;
+        count = parseInt(count);
+        while(a==0)
+            {
+                if(user_answer>answer)
+                    {
+                        alert("입력한 숫자가 큽니다.");
+                        count++;
+                        var user_answer = prompt("숫자를 맞춰보세요", "");
+                    }
+                else if(user_answer<answer)
+                    {
+                        alert("입력한 숫자가 작습니다.");
+                        count++;
+                        var user_answer = prompt("숫자를 맞춰보세요", "");
+                    }
+                else if(user_answer=answer)
+                    {
+                        
+                        a=1;
+                        count++;
+                        
+                    }
+                
+            }
+        document.write("당신은 "+count+"번 만에 정답을 맞췄습니다.");
+    </script>
+</html>
